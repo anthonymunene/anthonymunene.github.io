@@ -1,8 +1,9 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>Document</title>
@@ -39,7 +40,6 @@
         border: 0;
         height: auto;
         line-height: 100%;
-        outline: none;
         text-decoration: none;
     }
     table {
@@ -63,21 +63,27 @@
       xtext-align: center;
     }
     table {
-        background: url('images/bg_span.png') repeat-y center center; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;      
-      width: 650px;
-      margin: 0 auto;
       background: #FFFFFF;
-      margin-top: 20px;
+      padding-top: 20px;
     }
     td {
       padding: 10px 16px;
+      text-align: left;
     }
+    img {
+      outline:none; 
+      text-decoration:none; 
+      -ms-interpolation-mode: bicubic;
+    }
+    a img {
+      border:none;
+    }
+    .image_fix {display:block;}    
     .no-padding {
       padding: 0;
+    }
+    .no-padding-top {
+      padding-top: 0;
     }
     .flush {
       margin: 0 !important;
@@ -97,8 +103,8 @@
     p {
       font-size: 0.75em;
       color: #002b41;
-      padding-bottom: 0.375em;
       margin: 0;
+      padding-bottom: 0.5em;
     }
     h2 {
       font-size:  0.9375em;
@@ -121,30 +127,22 @@
     .offer {
       background: #d04158;
       padding: 0;
-      position: relative;
     }
     .offer h2 {
       font-size: 1.125em;
-      position: relative;
-      left: -8px;
       background-color: #d04158;
       padding: 13px 20px;
+      line-height: 12px;
     }
-    .offer .spacer {
-      position: absolute;
-      left: -9px;
-      bottom: -6px;
-      background-color: #d04158;
+    .promotion-hero {
+      height:100%;
     }
     .promotion-content{
-      padding: 20px 20px 0 20px;
-      width: 357px;
+      padding: 0 20px 0 20px;
     }
     .promotion-heading {
-      position: relative;
-    }
-    .promotion-heading-spacer {
-
+      margin-top: 0.5em;
+      margin-bottom:  0.5em;
     }
     .promotion-sub-heading {
       font-size: 1em;
@@ -152,46 +150,40 @@
     .promotion-content h3 {
       font-size: 1em;
       text-transform: uppercase;
-      margin-top: 0;
-      margin-bottom: 0.35em;
     }
     .promotion-content ,.promotion-hero {
       float: left;
+    }
+    .promotion-links {
+      padding-top: 0;
+      padding-bottom: 0;
     }
     .promotion-links a {
       background: #d04158;
       text-align: center;
       color: #FFFFFF;
-      padding: 10px;
+      padding: 8px 10px;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 0.625em;
-    }
+      height: 20px;
+      }
     .promotion-links .link1 {
-      width: 139px;
+      width: 130px;
     }
     .promotion-links .link2 {
       width:97px;
-      padding: 15px 0;
+      padding-top: 14px;
+      height: 14px;
+      
     }
     .logo-change-notice {
       background: #e6a500;
       text-align: center;
-      position: relative;
-    }
-    .logo-change-notice .spacer {
-      position: absolute;
-      left: -9px;
-      top: -8px;
+      padding: 10px 10px 5px 10px;
     }
     .logo-change-notice .notice {
       background-color: #e6a500;
-      padding: 10px 0px 10px 20px;
-      position: relative;
-      top: 4px;
-      left: -9px;
-      xdisplay: none;
-      margin-top: -4px;
     }
     .logo-change-notice p {
       color: #FFFFFF !important;
@@ -210,70 +202,97 @@
     }
   </style>
 </head>
-<body>
-
-<table>
+<body style="width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;">
+<table cellpadding="0" cellspacing="0" border="0" style="background:#002b41; width:650px;" align="center">
 <tr>
-    <td class="no-padding logo">
-      <h1> <img src="images/accor_logo.gif"  alt="Affiliate marketing by accor hotels"></h1>
-      <p class="to-upper text--center">august issue</p>
-    </td>
-  </tr>
-  <tr><td class="main-hero no-padding"><img src="images/hero_image.jpg" width="650" height="394" alt="earn an extra 2% in commission this summer"></td></tr>
-  <tr>
-    <td>
-      <p class="to-upper strong">dear simon turnbull,</p>
-      <p class="to-upper strong">start earning more commission with <strong>accrohotels.com</strong> in the us and canada</p>
-      <p>For a limited time, promote <strong>AccorHotels</strong> on your website(s) and <strong>EARN an extra +2%</strong> in commission in the US and Canada when you feature our <strong>Early Booking</strong> promotion. </p>
-      <h2 class="availability to-upper text--center">Available until September 5th, 2015</h2>
-      <p>Whether your clients are looking for a weekend getaway in North America or an extended stay in South America, Europe, Asia or Down-Under, AccorHotels has always the most attractive summer offers for you to choose from:</p>
+  <td>
+      <table>
+        <tr>
+          <td class="no-padding logo">
+            <h1> <img src="http://anthonymunene.github.io/images/accor_logo.gif"  alt="Affiliate marketing by accor hotels" style="width:100%"></h1>
+            <p class="to-upper text--center">august issue</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="main-hero no-padding"><img src="http://anthonymunene.github.io/images/hero_image.jpg"  alt="earn an extra 2% in commission this summer" style="width:100%"></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="to-upper strong">dear {{INSERT NAME HERE}},</p>
+            <p class="to-upper strong">start earning more commission with <strong>accrohotels.com</strong> in the us and canada</p>
+            <p>For a limited time, promote <strong>AccorHotels</strong> on your website(s) and <strong>EARN an extra +2%</strong> in commission in the US and Canada when you feature our <strong>Early Booking</strong> promotion. </p>
+            <h2 class="availability to-upper text--center">Available until September 5th, 2015</h2>
+            <p>Whether your clients are looking for a weekend getaway in North America or an extended stay in South America, Europe, Asia or Down-Under, AccorHotels has always the most attractive summer offers for you to choose from:</p>
 
-    </td>
-  </tr>
-  <tr>
-    <td class="offer" valign="middle">
-      <img src="images/top_offer_spacer.jpg" class="spacer"/>
-      <h2 class="to-upper flush"><img src="images/top_offer_heading.gif" alt="top offer this summer"></h2>
-    </td>
-  </tr>
-  <tr>
-    <td class="no-padding">
-      <div class="promotion">
-        <img class="promotion-hero" src="images/offer_image.jpg"  alt="promotion of the month">
-          <div class="promotion-content">
-            <h3 class="promotion-heading">Promotion of the month</h3>
-            <p class="to-upper promotion-sub-heading">early booking: This Summer,</br>we reward our early birds! </p>
-            <p>Save up to 30% off worldwide bookings when you book 30 days in advance on AccorHotels.com! Now is the time to book your next dream getaway. </p>
-            <p>This special offer is available at most of our hotel brands, including Sofitel, Pullman, Novotel, Mercure and Ibis Styles.</p>
-            <div class="promotion-links">
-              <a class="float--left link1" href="#">access all links and banners</a>
-              <a class="float--right link2" href="#">more info</a>
-            </div>
-          </div>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="no-padding">
-      <div class="logo-change-notice">
-      <img class="spacer" src="images/logo-notice-change-spacer.jpg" alt="">
-  <img class="notice" src="images/logo-change-notice.jpg" alt="We have just changed the AccorHotels logo, which is available on CJ’s platform.Don't forget to update your website(s)!" />
-        
-      </div>  
-    </td>
-  </tr>
-  <tr>
-    <td class="footer">
-      <p>YOUR DEDICATED US &amp; CANADA TEAM</p>
-      <p>Our team is here to help you maximize your earnings. If you have any questions, do not hesitate to contact us at: </p>
-      <p><a href="mailto:affiliate-marketing-us@accor.com">affiliate-marketing-us@accor.com</a></p>
-      <p>Regards</p>
-      <p class="to-upper">The AccorHotels.com US and Canada Affiliate Marketing Team</p>
-    </td>
-  </tr>
+          </td>
+        </tr>
+        <tr>
+          <td class="offer" valign="middle">
+            <h2 class="to-upper flush"><img src="http://anthonymunene.github.io/images/top_offer_heading.gif" alt="top offer this summer"></h2>
+          </td>
+        </tr>
+        <tr>
+          <td class="no-padding">
+            <table cellpadding="0" cellspacing="0" style="padding-top:0">
+              <tr>
+                <td class="no-padding" valign="top">
+                   <img class="promotion-hero" src="http://anthonymunene.github.io/images/offer_image.jpg"  alt="promotion of the month">
+                </td>
+                <td class="no-padding">
+                  <table cellspacing="0" cellpadding="0" style="padding:0">
+                    <tr>
+                        <td class="no-padding-top">
+                          <h3 class="promotion-heading to-upper">Promotion of the month</h3>
+                          <p class="to-upper promotion-sub-heading">early booking: This Summer,<br />we reward our early birds! </p>
+                          <p>Save up to 30% off worldwide bookings when you book 30 days in advance on AccorHotels.com! Now is the time to book your next dream getaway. </p>
+                          <p>This special offer is available at most of our hotel brands, including Sofitel, Pullman, Novotel, Mercure and Ibis Styles.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="promotion-links">
+                          <table  cellpadding="0" cellspacing="0" style="width: 100%;">
+                            <tr>
+                              <td class="no-padding" valign="top">
+                                <a class="float--left link1" href="http://somelink.com">access all links <br /> and banners</a>
+                              </td>
+                              <td class="no-padding" valign="top">
+                                <a class="float--right link2" href="http://somelink.com">more info</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>  
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="no-padding">
+            <div class="logo-change-notice">
+        <img class="notice" src="http://anthonymunene.github.io/images/logo-change-notice.jpg" alt="We have just changed the AccorHotels logo, which is available on CJ’s platform.Don't forget to update your website(s)!" />
+              
+            </div>  
+          </td>
+        </tr>
+        <tr>
+          <td class="footer">
+            <p>YOUR DEDICATED US &amp; CANADA TEAM</p>
+            <p>Our team is here to help you maximize your earnings. If you have any questions, do not hesitate to contact us at: </p>
+            <p><a href="mailto:affiliate-marketing-us@accor.com">affiliate-marketing-us@accor.com</a></p>
+            <p>Regards</p>
+            <p class="to-upper">The AccorHotels.com US and Canada Affiliate Marketing Team</p>
+          </td>
+        </tr>
 
-  <tr><td class="footer no-padding"><img src="images/hotel-groups.jpg" alt=""/></td></tr>
-</table>
-  
+        <tr>
+          <td class="footer no-padding"><img src="http://anthonymunene.github.io/images/hotel-groups.jpg" alt=""/>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>  
 </body>
 </html>
